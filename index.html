@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Que tanto Sabes?</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            Wuenas Contesta las Preguntas Inmundo Animal 
-        </nav>
+      <nav>Wuenas Contesta las Preguntas</nav>
     </header>
     <section>
-        <div class="main">
-            <div class="jsonEstatico">
-
-            </div>
+      <div class="main">
+        <div class="puntos">
+          <div class="correctosYErrores"></div>
         </div>
+        <div class="jsonEstatico">
+            <div class="ObjetoDePreguntas">
+                <div class="titulo"></div>
+                <div class="preguntas"></div>
+            </div>
+          <form id = "formForBtn">
+            <div class="btnDelForm"><button onclick="PintarEnPantalla(event);" type="submit" class="btn">Siguiente</button></div>
+          </form>
+        </div>
+      </div>
     </section>
+    <footer>
+      
+    </footer>
 
     <script src="src/main.js"></script>
-</body>
+  </body>
 </html>
