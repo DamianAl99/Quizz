@@ -74,6 +74,7 @@ section .main .jsonEstatico .ObjetoDePreguntas .preguntas {
 }
 section .main .jsonEstatico .ObjetoDePreguntas .preguntas .inputRadio {
   display: block;
+  margin-bottom: 10px;
 }
 section
   .main
