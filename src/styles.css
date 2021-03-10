@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(49, 0, 139);
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: white;
+}
+header {
+  background: rgb(31, 0, 88);
+  border: none;
+  width: 100%;
+  height: 60px;
+  font-size: 1.6em;
+}
+header nav {
+  width: 100%;
+  line-height: 60px;
+  margin: auto;
+}
+header nav h4 {
+  text-align: center;
+}
+
+section {
+  margin: auto;
+  width: 90%;
+  height: 250px;
+  margin-top: 20px;
+  background: rgb(88, 0, 66);
+}
+section .main {
+  width: 100%;
+  height: 100%;
+}
+section .main .puntos {
+  background: rgba(148, 247, 148, 0.9);
+  color: black;
+}
+section .main .puntos .correctosYErrores {
+  padding: 10px;
+  display: none;
+}
+section .main .puntos .correctosYErrores h4{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+section .main .jsonEstatico {
+  width: 95%;
+  margin: auto;
+}
+section .main .jsonEstatico .ObjetoDePreguntas {
+  width: 100%;
+}
+section .main .jsonEstatico .ObjetoDePreguntas .titulo {
+  width: 100%;
+  font-size: 1.45em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+  border-bottom: black solid 2px;
+}
+section .main .jsonEstatico .ObjetoDePreguntas .preguntas {
+  width: 100%;
+  font-size: 1.15em;
+  font-weight: 400;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+section .main .jsonEstatico .ObjetoDePreguntas .preguntas .inputRadio {
+  display: block;
+}
+section
+  .main
+  .jsonEstatico
+  .ObjetoDePreguntas
+  .preguntas
+  .inputRadio
+  span {
+  padding-left: 10px;
+}
+section .main .jsonEstatico #formForBtn{
+    width: 100%;
+    height: 60px;
+    margin-top: 40px;
+    z-index: 99;
+}
+section .main .jsonEstatico #formForBtn .btnDelForm{
+    width: 90px;
+    height: 60px;
+    margin: auto;
+}
+section .main .jsonEstatico #formForBtn .btnDelForm button{
+    border: none;
+    background: rgb(29, 0, 22);
+    color: white;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 1.2em;
+}
+
+.btnResultados{
+    border: none;
+    background: orange;
+    color: white;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 1.2em;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    background: rgb(31, 0, 88);
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+}
+footer a h1{
+    text-align: center;
+    font-size: 1.2em;
+}
+button{
+    cursor: pointer;
+}
+.reiniciar{
+    border: none;
+    background: rgb(29, 0, 22);
+    color: white;
+    padding: 15px;
+    border-radius: 2px;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+}

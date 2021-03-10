@@ -5,29 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Que tanto Sabes?</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <nav>Wuenas Contesta las Preguntas</nav>
+      <nav><h4>Wuenas Contesta las Preguntas :D</h4></nav>
     </header>
     <section>
+      <form action="/">
+        <button class="reiniciar">
+          Reiniciar
+        </button>
+      </form>
       <div class="main">
         <div class="puntos">
           <div class="correctosYErrores"></div>
         </div>
         <div class="jsonEstatico">
-            <div class="ObjetoDePreguntas">
-                <div class="titulo"></div>
-                <div class="preguntas"></div>
+          <div class="ObjetoDePreguntas">
+            <div class="titulo"></div>
+            <div class="preguntas"></div>
+          </div>
+          <form id="formForBtn">
+            <div class="btnDelForm">
+              <button
+                onclick="PintarEnPantalla(event);"
+                type="submit"
+                class="btn"
+              >
+                Siguiente
+              </button>
             </div>
-          <form id = "formForBtn">
-            <div class="btnDelForm"><button onclick="PintarEnPantalla(event);" type="submit" class="btn">Siguiente</button></div>
           </form>
         </div>
       </div>
     </section>
     <footer>
-      
+      <a href="https://www.instagram.com/damiian_al/"><h1>Damian Almada</h1></a>
     </footer>
 
     <script src="src/main.js"></script>

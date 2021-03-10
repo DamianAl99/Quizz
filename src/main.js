@@ -60,6 +60,17 @@ let preguntasChidas = [
     },
     RespuestaCorrecta: "Ninguna de las anteriores es Mentira",
   },
+  {
+    title: "Cuanto le mide a Luisito?",
+    Respuestas: {
+      a: "2.5 cm",
+      b: "3 cm",
+      c: "6.5 cm",
+      d: "4.5 cm",
+      e: "4 cm",
+    },
+    RespuestaCorrecta: "4.5 cm",
+  }
 ];
 
 //variables Goblales
@@ -116,8 +127,10 @@ PintarEnPantalla = (e) => {
   });
   for (let i = 0; i < arrayA.length; i++) {
     imprimirPreguntas.innerHTML += `
-          <label></label>
-          <input type='radio' name='radio' class='opcionRespuesta${numRandomParaElegirObjeto}' value='${arrayA[i]}'>${arrayA[i]}</input>`;
+          <div class="inputRadio">
+            <label></label>
+            <input type='radio' name='radio' class='opcionRespuesta${numRandomParaElegirObjeto}' value='${arrayA[i]}'><span>${arrayA[i]}</span></input>
+          </div>`;
   }
 
   //para sumar las respuestas correctas
@@ -160,13 +173,11 @@ PintarEnPantalla = (e) => {
       event.preventDefault();
       var pintarResultados = document.querySelector(".correctosYErrores");
       if (preguntasChidas.length == 0) {
-        pintarResultados.innerHTML = `Correctos: ${cont}, Errados: ${contError}, ${
-          cont < totalDePreguntas / 2
-            ? "Eres una Decepcion Hermano"
-            : "Muy bien Imbecil"
-        }`;
+        pintarResultados.innerHTML = `
+        <h4>Correctos: ${cont}, Errados: ${contError}, ${cont < totalDePreguntas / 2 ? "Eres una Decepcion Hermano" : "Muy bien Imbecil"}</h4>`;
+        pintarResultados.style.display = "block";
         btnDelForm.style.display = "none";
-      }
+      } 
     });
   }
 };
